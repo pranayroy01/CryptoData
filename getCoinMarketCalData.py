@@ -6,6 +6,11 @@ import datetime
 import time
 from git import Repo
 
+import sys
+
+reload(sys)
+sys.setdefaultencoding('UTF8')
+
 # Get Load Date
 sysdate = datetime.datetime.fromtimestamp(int(time.time())).strftime('%Y-%m-%d %H:%M:%S')
 
